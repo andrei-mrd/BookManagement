@@ -1,6 +1,9 @@
-﻿namespace BookManagement.Persistence;
+﻿using BookManagement.Features;
+using Microsoft.EntityFrameworkCore;
 
-public class BookManagementContext
+namespace BookManagement.Persistence;
+
+public class BookManagementContext(DbContextOptions<BookManagementContext> options): DbContext(options)
 {
-    
+    public DbSet<Book> Books { get; set; }
 }

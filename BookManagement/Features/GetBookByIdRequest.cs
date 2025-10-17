@@ -1,6 +1,3 @@
 ﻿namespace BookManagement.Features;
 
-public class GetBookByIdRequest
-{
-    
-}
+public record GetBookByIdRequest(Guid Id);

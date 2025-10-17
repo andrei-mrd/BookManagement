@@ -1,6 +1,3 @@
 ﻿namespace BookManagement.Features;
 
-public class GetAllBookRequest
-{
-    
-}
+public record GetAllBookRequest();

@@ -1,6 +1,5 @@
-﻿namespace BookManagement.Features;
+﻿using System.Xml;
 
-public class Book
-{
-    
-}
+namespace BookManagement.Features;
+
+public record Book(Guid Id, string Title, string Author, int YearPublished);

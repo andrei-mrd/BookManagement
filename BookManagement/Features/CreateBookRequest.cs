@@ -1,6 +1,3 @@
 ﻿namespace BookManagement.Features;
 
-public class CreateBookRequest
-{
-    
-}
+public record CreateBookRequest(string Title, string Author, int YearPublished);

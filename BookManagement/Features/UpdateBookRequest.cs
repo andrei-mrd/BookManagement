@@ -1,3 +1,3 @@
 ﻿namespace BookManagement.Features;
 
-public record UpdateBookRequest();
+public record UpdateBookRequest(Guid Id, string Title, string Author, int YearPublished);

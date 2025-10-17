@@ -1,3 +1,3 @@
 ﻿namespace BookManagement.Features;
 
-public record DeleteBookRequest();
+public record DeleteBookRequest(Guid Id);
